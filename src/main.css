@@ -1,0 +1,97 @@
+body {
+	background: bisque;
+	font-family: fantasy;
+	font-weight: 700;
+}
+
+label {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.layout {	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.panel {
+	height: 100px;
+}
+
+.som {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.game {
+	position: relative;
+}
+
+.board {
+	display: flex;
+	flex-wrap: wrap;
+	border: 2px solid black;
+}
+
+.cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 150px;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 80px;
+	font-weight: 700;
+	border: 1px solid black;
+	box-sizing: border-box;
+	color: bisque;
+}
+
+.cell:hover {
+	background: #ccc;
+}
+
+.cell.empty{
+	cursor: pointer;
+}
+
+.cell.player-one {
+	background: teal;
+}
+
+.cell.player-two {
+	background: tomato;
+}
+
+.player-select {
+	display: flex;
+	justify-content: center;
+}
+
+.player-btn {
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	background: salmon;
+	border: none;
+}
+
+.message-screen {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
+	font-size: 30px;
+}
